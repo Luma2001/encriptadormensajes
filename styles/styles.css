@@ -1,0 +1,180 @@
+*{
+    background:  #E5E5E5;
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
+    text-align: left;
+
+}
+
+.logo{
+    height: 48px;
+    width: 120px;
+    left: 40px;
+    margin-top: 40px;
+   
+}
+
+main{
+    max-width: fit-content;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+    margin-left: 80px;
+
+}
+
+.textoIngresado{
+    border: none;
+    color: #0A3871;
+    margin-top: 90px;
+    text-transform: lowercase;
+    
+}
+::placeholder{ 
+    color: #0A3871;
+}
+
+.textoIngresado:focus{
+    outline:none;
+}
+
+.textoEncriptado{
+    background: white;
+    background-image: url(../images/Muñeco.png);
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 1em;
+    color:#0A3871;
+    margin-left: 100px;
+    margin-top: 80px;
+    padding: 0.5em;
+    
+    
+}
+
+.textoEncriptado:focus{
+    outline: none;
+}
+
+.informacion{
+    color: #494057;
+    font-size: 18px;
+}
+
+.botones{
+    display: flex;
+    margin-top: 18px;
+
+}
+.btn_desencriptar{
+    background: #d8dfe8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color:#0A3871;
+    cursor: pointer;
+    height:67px;
+    margin-left: 30px;
+    width:328px;
+    text-align: center;
+}
+
+.btn_encriptar{
+    background: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color:#ffffff;
+    cursor: pointer;
+    height:67px;
+    margin-left: 30px;
+    width:328px;
+    text-align: center;
+}
+
+.btn_copiar{
+    margin-top: 30px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color:#0A3871;
+    cursor: pointer;
+    height:67px;
+    margin-left: 108px;
+    position: absolute;
+    width:328px;
+    text-align: center;
+}
+
+/*empieza codigo para footer*/
+.foot{
+    display: flex;
+    flex-direction: row;
+    align-items:center ;
+    justify-content:center;
+    margin-top: 18px;
+    padding-top:50px
+    
+}
+
+.avatar{
+    margin: 2em auto;
+    width: 48px;
+    display: inline;
+    
+    
+} 
+
+.foot h6{
+    color: #0A3871;
+    padding-left:1em;
+    font-size: medium;
+    
+}
+
+
+
+
+@media screen and (max-width:1200px){
+    
+   
+    main{
+        width: 100%;
+        flex-direction: column;
+        align-content: center;
+        margin-bottom: 50px;
+        margin-left: 30px;
+        
+    }
+
+    
+      
+}
+
+@media screen and (max-width:600px){
+main{
+    margin: auto;
+}
+
+.btn_desencriptar, .btn_encriptar{
+    width: 40%;
+    font-size: large;
+
+}
+
+
+}
+
+
+@media screen and (max-width:400px){
+    
+    
+.foot{
+    flex-direction: column;
+}
+.foot h6{
+    font-size: smaller;
+    
+}
+    
+}
