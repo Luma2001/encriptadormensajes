@@ -16,13 +16,14 @@
 
     <header>
         <img class="logo" src="./images/Logo.png" alt="Logo de Alura" >
+        <h1>CHALLENGE ENCRIPTADOR</h1>
     </header>
 
     <main>
 
         <section class="entrada">
-            <textarea class="textoIngresado" cols="30" rows="5" placeholder="Ingrese el texto aquí"></textarea><!--Campo para texto que va a ser encriptado o desencriptado-->
-            <div><h6 class="informacion">Sólo letras minúsculas y sin acentos.</h6></div>
+            <textarea class="textoIngresado" cols="20" rows="5" placeholder="Ingrese el texto aquí"></textarea><!--Campo para texto que va a ser encriptado o desencriptado-->
+            <h6 class="informacion">Sólo letras y sin acentos.</h6>
             <div class="botones">
                 <button class="btn_encriptar" onclick="btnEncriptar()">Encriptar</button><!--Botón para encriptar. Asociamos el evento onclick a la funcion btnEncriptar-->
                 <button class="btn_desencriptar" onclick="btnDesencriptar()">Desencriptar</button><!--Botón para desencriptar. Asociamos el evento onclick a la funcion btnDesencriptar-->
@@ -30,7 +31,8 @@
         </section>
 
         <section class="salida">
-            <textarea  class="textoEncriptado"cols="18" rows="5"></textarea><!--Área para mostrar resultados-->
+            <textarea  class="textoEncriptado"cols="20" rows="5"></textarea><!--Área para mostrar resultados-->
+            <h6 class="informacion">Copia y envía el mensaje.</h6>
             <div class="botones">
                 <button class="btn_copiar" onclick="copiarTexto()">Copiar Texto</button><!--Extra: botón para copiar texto a portapapeles-->
             </div>

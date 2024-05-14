@@ -1,164 +1,271 @@
 *{
-    background:  #E5E5E5;
+
     font-family: Inter;
     font-size: 32px;
     font-weight: 400;
     line-height: 48px;
-    text-align: left;
+    
 
 }
 
-.logo{
-    height: 48px;
-    width: 120px;
-    left: 40px;
-    margin-top: 40px;
-   
+body{
+    background: linear-gradient(#8e33ca 40%, #0A3871);
+    height: auto;
 }
 
-main{
-    max-width: fit-content;
+header{
     display: flex;
+    align-items: center;
+    justify-content: start;
     flex-direction: row;
-    margin-bottom: 50px;
-    margin-left: 80px;
+    margin: 15px auto;
 
-}
-
-.textoIngresado{
-    border: none;
-    color: #0A3871;
-    margin-top: 90px;
-    text-transform: lowercase;
+    .logo{
+        height: 40px;
+        width: 120px;
+        left: 40px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     
-}
-::placeholder{ 
-    color: #0A3871;
-}
+    }
 
-.textoIngresado:focus{
-    outline:none;
-}
-
-.textoEncriptado{
-    background: white;
-    background-image: url(../images/Muñeco.png);
-    box-sizing: border-box;
-    background-repeat: no-repeat;
-    border: none;
-    border-radius: 1em;
-    color:#0A3871;
-    margin-left: 100px;
-    margin-top: 80px;
-    padding: 0.5em;
-    
-    
-}
-
-.textoEncriptado:focus{
-    outline: none;
-}
-
-.informacion{
-    color: #494057;
-    font-size: 18px;
-}
-
-.botones{
-    display: flex;
-    margin-top: 18px;
-
-}
-.btn_desencriptar{
-    background: #d8dfe8;
-    border: 1px solid #0A3871;
-    border-radius: 24px;
-    color:#0A3871;
-    cursor: pointer;
-    height:67px;
-    margin-left: 30px;
-    width:328px;
-    text-align: center;
-}
-
-.btn_encriptar{
-    background: #0A3871;
-    border: 1px solid #0A3871;
-    border-radius: 24px;
-    color:#ffffff;
-    cursor: pointer;
-    height:67px;
-    margin-left: 30px;
-    width:328px;
-    text-align: center;
-}
-
-.btn_copiar{
-    margin-top: 30px;
-    border: 1px solid #0A3871;
-    border-radius: 24px;
-    color:#0A3871;
-    cursor: pointer;
-    height:67px;
-    margin-left: 108px;
-    position: absolute;
-    width:328px;
-    text-align: center;
-}
-
-/*empieza codigo para footer*/
-.foot{
-    display: flex;
-    flex-direction: row;
-    align-items:center ;
-    justify-content:center;
-    margin-top: 18px;
-    padding-top:50px
-    
-}
-
-.avatar{
-    margin: 2em auto;
-    width: 48px;
-    display: inline;
-    
-    
-} 
-
-.foot h6{
-    color: #0A3871;
-    padding-left:1em;
-    font-size: medium;
-    
-}
-
-
-
-
-@media screen and (max-width:1200px){
-    
-   
-    main{
-        width: 100%;
-        flex-direction: column;
-        align-content: center;
-        margin-bottom: 50px;
-        margin-left: 30px;
+    h1{
+        color: #0A3871;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 40px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-shadow: 
+            1px 1px 2px black;
+           
         
     }
 
-    
-      
+
 }
 
-@media screen and (max-width:600px){
+
+
 main{
+    width: 90vw;
+    max-width: 900px;
     margin: auto;
-}
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+
+    section{
+        width: 50%;
+        height: 450px;
+        margin-bottom: 20px;
+    }
+
+    .entrada {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        .textoIngresado{
+            width: 90%;
+            border: none;
+            color: black;
+            height: 285px;
+            text-transform: lowercase;
+            border-top-left-radius: 20px;
+            box-shadow: 3px 3px 5px #0A3871;
+            text-align: center;
+        
+            &:focus{
+                outline:none;
+            }
+
+        }/*fin textoIngresado*/
+        
+        h6.informacion{
+            color: whitesmoke;
+            font-size: 18px;
+            text-align: center;
+            line-height: 20px;
+        }
+
+    }/*fin entrada*/
+
+
+    .salida{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        
+        .textoEncriptado{
+            width: 90%;
+            height: 285px;
+            border: none;
+            color: black;
+            background: white;
+            background-image: url(../images/Muñeco.png);
+            background-repeat: no-repeat;
+            box-shadow: 3px 3px 5px #0A3871;
+            border-top-left-radius: 20px;
+            text-align: center;
+                        
+            &:focus{
+                outline: none;
+            }
+        
+        }/*fin textoEncriptado*/
+
+        h6.informacion{
+            color: whitesmoke;
+            font-size: 18px;
+            text-align: center;
+            line-height: 20px;
+        }
+
+    }/*fin salida*/
+
+    ::placeholder{ 
+        color: #0A3871;
+                    
+    }
+
+    .botones{
+        display: flex;
+        margin-top: 18px;
+        gap: 10px;
+        width: 100%;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        
+
+        .btn_encriptar, .btn_desencriptar{
+            background:#8e33ca ;
+            border-radius: 24px;
+            box-shadow: 2px 2px 5px #ffffff;
+            color:#ffffff;
+            cursor: pointer;
+            height:67px;
+            font-size: x-large;
+            width:40%;
+            text-align: center;
+        }/*fin btn_encriptar*/
+        
+        .btn_desencriptar{
+            background: #0A3871;
+            
+        }/*fin btn_desencriptar*/
+        
+        .btn_copiar{
+           
+            border: 1px solid #0A3871;
+            border-radius: 24px;
+            box-shadow: 2px 2px 5px #ffffff;
+            color:#0A3871;
+            cursor: pointer;
+            height:67px;
+            font-size: x-large;
+            width:80%;
+            text-align: center;
+        }/*fin btn_copiar*/
+
+    }/*fin botones*/
+}/*fin main*/
+
+
+/*footer*/
+
+footer{
+    /* width: 90vw;
+    max-width: 1000px;
+    margin: auto; */
+    
+
+    .foot{
+        display: flex;
+        flex-direction: row;
+        align-items:center ;
+        justify-content:center;
+        /* margin-top: 18px;
+        padding-top:50px; */
+    
+        .avatar{
+            /* margin: 2em auto; */
+            width: 35px;
+            display: inline;
+            
+        } 
+        
+        h6{
+            color: #fff;
+            padding-left:1em;
+            font-size: medium;
+            
+        }
+        
+
+    }
+}/*fin footer*/
+
+
+
+@media screen and (max-width:900px){
+    main{
+
+        .botones{
+            .btn_desencriptar, .btn_encriptar, .btn_copiar{
+                
+                font-size: 14px;
+            } 
+        }
+    }
+    
+    
+    }
+
+@media screen and (max-width:700px){
+    
+    header{
+        margin: 10px auto;
+        h1{
+            font-size: 27px;
+        }
+    }
+    main{
+        flex-direction: column;
+        section{
+            width: 80%;
+            margin-bottom: 90px;
+        }
+        .entrada, .salida {
+            justify-content: center;     
+            h6.informacion{
+                height: 50px;
+                font-size: 12px;
+            
+            }
+        }
+        
+
+        .botones{
+            
+            .btn_encriptar, .btn_desencriptar, .btn_copiar{
+            width:80%;
+            font-size: 16px;
+            
+            }    
+        }
+
+    
+    }
+    
 
 .btn_desencriptar, .btn_encriptar{
-    width: 40%;
-    font-size: large;
+    
+    font-size: small;
 
 }
 
